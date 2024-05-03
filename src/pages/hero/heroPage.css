@@ -78,6 +78,9 @@
 }
 
 @media screen and (max-width: 560px) {
+  .hero_container {
+    box-shadow: inset 0px 50svh 10svh #00000025;
+  }
   .hero_container-text h2 {
     font-size: 1.5em;
   }
@@ -88,7 +91,8 @@
 
   .hero_container-button button {
     padding: 0.8em 1.6em;
-    min-width: 280px;
+    min-width: 260px;
     margin-top: 2em;
+    font-size: 0.8em;
   }
 }

@@ -5,6 +5,8 @@
   left: 0;
   right: 0;
   padding: 2em;
+
+  z-index: 10;
 }
 
 .navbar_container {
