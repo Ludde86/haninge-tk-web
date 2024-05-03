@@ -51,8 +51,8 @@ button {
   font-size: 1.2em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #fff;
-  color: #000;
+  background-color: #1560bd;
+  color: #fff;
   cursor: pointer;
   opacity: 0.8;
   transition: all 0.5s;
@@ -60,12 +60,12 @@ button {
 button:hover {
   /* border-color: #fff; */
   opacity: 1;
-  background-color: #1974d2;
-  color: #fff;
+  background-color: #fff;
+  color: #1560bd;
 }
 
 .sub_button {
-  border: 1px solid #fff;
+  border: 1px solid #1560bd;
   color: #fff;
   background-color: transparent;
 }

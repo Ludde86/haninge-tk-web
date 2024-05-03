@@ -54,6 +54,7 @@
   left: 0;
   right: 0;
   bottom: 5em;
+  cursor: pointer;
 
   animation: icon-down 1s infinite ease-in-out alternate;
 }
@@ -105,11 +106,11 @@
     box-shadow: inset 0px 50svh 10svh #00000025;
   }
   .hero_container-text h2 {
-    font-size: 1.5em;
+    font-size: 1.6em;
   }
 
   .hero_container-text h1 {
-    font-size: 2em;
+    font-size: 2.2em;
   }
 
   .hero_container-button button {
@@ -117,5 +118,18 @@
     min-width: 260px;
     margin-top: 2em;
     font-size: 0.8em;
+  }
+
+  .hero_container-icon_down {
+    bottom: 2.5em;
+  }
+
+  @keyframes icon-down {
+    0% {
+      margin-bottom: 0;
+    }
+    100% {
+      margin-bottom: 1.6em;
+    }
   }
 }
