@@ -46,11 +46,13 @@
 
 @media screen and (max-width: 560px) {
   .navbar_container-wrapper {
-    padding: 1em;
+    padding: 0em;
   }
   .navbar_container {
     width: 100%;
-    padding: 0.6em;
+    padding: 0em;
+    border-radius: 0em;
+    min-height: 10svh;
   }
 
   .navbar_container a {
