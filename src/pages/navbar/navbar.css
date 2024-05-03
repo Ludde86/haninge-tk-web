@@ -1,0 +1,27 @@
+.navbar_container-wrapper {
+  background: transparent;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 2em;
+}
+
+.navbar_container {
+  width: 80%;
+  background: #00000050;
+  padding: 1.2em;
+  border-radius: 1.5em;
+}
+
+.menu-btn {
+  color: #ccc;
+  cursor: pointer;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-btn:hover {
+  transform: scale(1.1);
+  color: #fff;
+}

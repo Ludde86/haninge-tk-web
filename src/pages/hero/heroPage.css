@@ -1,0 +1,36 @@
+.hero_container {
+  border: 1px solid black;
+  min-height: 100svh;
+  padding-right: 6em;
+
+  background-image: url("../../assets/images/img-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  box-shadow: inset -40em 0 1000em #0000006c;
+}
+
+.hero_container-text {
+  /* border: 1px solid black; */
+}
+
+.hero_container-text h2 {
+  font-size: 3em;
+  letter-spacing: 0.1em;
+  color: #ccc;
+  margin-bottom: 1em;
+}
+
+.hero_container-text h1 {
+  font-size: 6em;
+  letter-spacing: 0.1em;
+  color: #fff;
+}
+
+.hero_container-button {
+  /* position: relative; */
+  margin-top: 4em;
+  width: 50%;
+  /* border: 1px solid white; */
+}
