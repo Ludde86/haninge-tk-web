@@ -1,3 +1,4 @@
+import { ChevronsDown } from "lucide-react";
 import "./heroPage.css";
 
 const HeroPage = () => {
@@ -11,8 +12,9 @@ const HeroPage = () => {
 
       <div className="hero_container-button">
         <button>Boka bana</button>
-        <button>Bli medlem</button>
+        <button className="sub_button">Bli medlem</button>
       </div>
+      <ChevronsDown className="hero_container-icon_down" size={60} />
     </div>
   );
 };
