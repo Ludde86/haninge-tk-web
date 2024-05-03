@@ -19,9 +19,48 @@
   cursor: pointer;
 
   transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+    color: #fff;
+  }
 }
 
-.menu-btn:hover {
-  transform: scale(1.1);
-  color: #fff;
+@media screen and (max-width: 1020px) {
+  .navbar_container {
+    width: 90%;
+    padding: 0.8em;
+  }
+
+  .navbar_container a {
+    font-size: 0.8em;
+  }
+
+  .menu-btn {
+    transform: scale(0.9);
+    &:hover {
+      transform: scale(1);
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .navbar_container-wrapper {
+    padding: 1em;
+  }
+  .navbar_container {
+    width: 100%;
+    padding: 0.6em;
+  }
+
+  .navbar_container a {
+    font-size: 0.6em;
+  }
+
+  .menu-btn {
+    transform: scale(0.6);
+    &:hover {
+      transform: scale(0.7);
+    }
+  }
 }
