@@ -11,8 +11,8 @@ const HeroPage = () => {
       </div>
 
       <div className="hero_container-button">
-        <button>Boka bana</button>
-        <button className="sub_button">Bli medlem</button>
+        <button className="hero_container-button-act_button">Boka bana</button>
+        <button className="hero_container-button-sub_button">Bli medlem</button>
       </div>
       <ChevronsDown className="hero_container-icon_down" size={60} />
     </div>
