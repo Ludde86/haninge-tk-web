@@ -13,6 +13,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+
+  scroll-snap-align: start;
 }
 
 .hero_container-text {
@@ -77,13 +79,20 @@
 }
 
 .hero_container-icon_down {
-  width: 100%;
+  all: unset;
+
+  color: #eee;
+  width: 100px;
   position: absolute;
   left: 0;
   right: 0;
   bottom: 4em;
   cursor: pointer;
 
+  left: 50%;
+  transform: translateX(-50%);
+
+  transition: 0.5s;
   animation: icon-down 1s infinite ease-in-out alternate;
 }
 

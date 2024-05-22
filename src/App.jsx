@@ -6,12 +6,12 @@ import Navbar from "./pages/navbar/Navbar";
 
 function App() {
   return (
-    <>
+    <div>
       <Navbar />
       <HeroPage />
       <LandingPage />
       <Footer />
-    </>
+    </div>
   );
 }
 

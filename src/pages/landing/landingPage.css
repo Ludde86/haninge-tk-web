@@ -1,3 +1,127 @@
 .landing_container {
   min-height: 100svh;
+  max-height: 100svh;
+  scroll-snap-align: start;
+
+  /* padding: 2rem; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+
+  padding: 0 6rem;
+  background: #e0e7f4;
+}
+
+.landing_container-desc_container {
+  background: #e0e7f4;
+  max-width: 40%;
+  height: 80svh;
+}
+
+.landing_container-desc_container img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 4rem;
+}
+
+.landing_container-desc_container-desc h3 {
+  color: #333;
+
+  opacity: 0;
+  transform: translateY(100%);
+  animation: drop-down 1s forwards;
+}
+
+.landing_container-desc_container-desc p {
+  padding: 0.2rem 1rem;
+  color: #333;
+
+  opacity: 0;
+  transform: translateY(100%);
+  animation: drop-down 1s forwards;
+}
+
+@keyframes drop-down {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.landing_container-slider_wrapper {
+  position: relative; /* for the absolute position for the slider-nav */
+
+  width: 100%;
+  /* min-height: 100svh; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.landing_container-slider_wrapper-slider {
+  display: flex;
+  aspect-ratio: 4 / 3;
+  overflow-x: auto;
+  min-height: 80vh;
+  max-height: 80vh;
+  /* border-radius: 1rem; */
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.landing_container-slider_wrapper-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.landing_container-slider_wrapper-slider img {
+  flex: 1 0 100%;
+  object-fit: cover;
+}
+
+.animation {
+  opacity: 0;
+  transform: translateX(100%);
+  animation: fade-in 1s forwards;
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.landing_container-slider_nav {
+  display: flex;
+  column-gap: 3rem;
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.landing_container-slider_nav a {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #333;
+  opacity: 0.75;
+
+  transition: opacity ease 250ms;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .landing_container-slider_wrapper {
+    /* max-width: 80vw; */
+    /* margin: 0 auto; */
+  }
 }
