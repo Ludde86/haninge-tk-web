@@ -17,11 +17,6 @@ const HeroPage = () => {
       <a className="hero_container-icon_down" href="#landing">
         <ChevronsDown size={60} />
       </a>
-
-      <input
-        style={{ position: "fixed", bottom: "2rem", left: "2rem" }}
-        type="color"
-      />
     </div>
   );
 };

@@ -5,6 +5,7 @@ import img3 from "../../assets/images/stadium-logo.png";
 import img4 from "../../assets/images/start1_notitle.jpg";
 import logo from "../../assets/images/logga-medium_nobg.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const LandingPage = () => {
   const [image, setImage] = useState(img1);
@@ -22,8 +23,16 @@ const LandingPage = () => {
 
   return (
     <div id="landing" className="landing_container">
-      <div className="landing_container-desc_container">
+      <div className="landing_container-logo_container">
         <img src={logo} alt="logo" />
+        <p>
+          Haninge Tennisklubb är den personliga tennisklubben där alla ska känna
+          sig lika välkomna, här uppmuntras engagemang och delaktighet,
+          individen ges möjlighet till utveckling och efter sin egen
+          ambitionsnivå uppnå sin högsta potential!
+        </p>
+      </div>
+      <div className="landing_container-desc_container">
         <div className="landing_container-desc_container-desc">
           {image === img1 && (
             <>
@@ -49,6 +58,7 @@ const LandingPage = () => {
                 av dig till oss. Varmt välkommen till oss på Haninge
                 Tennisklubb.
               </p>
+              <button>Vår vision</button>
             </>
           )}
 
@@ -71,6 +81,9 @@ const LandingPage = () => {
                 För att anmäla dig till tennisskolan eller vuxentennis, klicka
                 då här!
               </p>
+              <button>
+                <Link to={"tennisskolan"}>Visa mig tennisskolan</Link>
+              </button>
             </>
           )}
 
@@ -78,6 +91,7 @@ const LandingPage = () => {
             <>
               <h3>Sponsorer</h3>
               <p>Stadium</p>
+              <button>Vill ni vara med?</button>
             </>
           )}
 
@@ -92,37 +106,38 @@ const LandingPage = () => {
                 till man fyllt 18 år. Det finns ett stort utbud tävlingar för
                 alla åldrar och kategorier.
               </p>
+              <button>Läs mer om våra tävlingar</button>
             </>
           )}
         </div>
-      </div>
-      <div className="landing_container-slider_wrapper">
-        <div className="landing_container-slider_wrapper-slider">
-          <img src={image} alt="img" className={animated && "animation"} />
-          {/*
+        <div className="landing_container-slider_wrapper">
+          <div className="landing_container-slider_wrapper-slider">
+            <img src={image} alt="img" className={animated && "animation"} />
+            {/*
           <img id="slide-1" src={img1} alt="img1" />
           <img id="slide-2" src={img2} alt="img2" />
           <img id="slide-3" src={img3} alt="img3" />
           <img id="slide-4" src={img4} alt="img4" />
            */}
-        </div>
-        <div className="landing_container-slider_nav">
-          <a
-            style={{ background: image === img1 && "#fff" }}
-            onClick={() => handleSetImage(img1)}
-          ></a>
-          <a
-            style={{ background: image === img2 && "#fff" }}
-            onClick={() => handleSetImage(img2)}
-          ></a>
-          <a
-            style={{ background: image === img3 && "#fff" }}
-            onClick={() => handleSetImage(img3)}
-          ></a>
-          <a
-            style={{ background: image === img4 && "#fff" }}
-            onClick={() => handleSetImage(img4)}
-          ></a>
+          </div>
+          <div className="landing_container-slider_nav">
+            <a
+              style={{ background: image === img1 && "#1560bd" }}
+              onClick={() => handleSetImage(img1)}
+            ></a>
+            <a
+              style={{ background: image === img2 && "#1560bd" }}
+              onClick={() => handleSetImage(img2)}
+            ></a>
+            <a
+              style={{ background: image === img3 && "#1560bd" }}
+              onClick={() => handleSetImage(img3)}
+            ></a>
+            <a
+              style={{ background: image === img4 && "#1560bd" }}
+              onClick={() => handleSetImage(img4)}
+            ></a>
+          </div>
         </div>
       </div>
     </div>

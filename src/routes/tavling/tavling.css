@@ -1,0 +1,192 @@
+.tavling_container {
+  min-height: 100svh;
+  padding: 0 6em;
+
+  background-image: url("../../assets/images/start1_notitle.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  box-shadow: inset -50vw 0 1000em #0000006c;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+
+  scroll-snap-align: start;
+
+  overflow: hidden;
+}
+
+.tavling_container-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  animation: from-right 1s forwards;
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+
+.tavling_container-text h1 {
+  font-size: 6em;
+  letter-spacing: 0.1em;
+  color: #fff;
+  text-shadow: 0px 0px 2px #000;
+
+  animation: from-left 1s forwards;
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+
+.tavling_container-text p {
+  font-size: 1.6rem;
+  text-align: start;
+  color: #fff;
+}
+
+.tavling_container-button {
+  margin-top: 4em;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 14em;
+}
+
+.tavling_container-button-act_button {
+  animation: fade-in 2s forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+.tavling_container-button-sub_button {
+  background: transparent;
+  border: 2px solid #1560bd;
+
+  animation: fade-in 2s forwards;
+  animation-delay: 1s;
+  opacity: 0;
+
+  &:hover {
+    background: #1560bd;
+    color: #fff;
+  }
+}
+
+@keyframes from-left {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes from-right {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  50% {
+    /* transform: scale(1.2); */
+  }
+  100% {
+    opacity: 1;
+    /* transform: scale(1); */
+  }
+}
+
+.tavling_content {
+  display: flex;
+}
+
+.tavling_content-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.tavling_content-sidebar h3 {
+  cursor: pointer;
+}
+
+.tavling_content h1 {
+  color: #333;
+}
+
+.tavling_content p {
+  color: #333;
+}
+
+@media screen and (max-width: 1020px) {
+  .tavling_container {
+    padding-right: 0em;
+    align-items: center;
+
+    box-shadow: inset -40em 0 1000em #0000006c;
+  }
+
+  .tavling_container-text {
+    align-items: flex-start;
+  }
+
+  .tavling_container-text h1 {
+    font-size: 4em;
+  }
+
+  .tavling_container-button {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .tavling_container-button button {
+    padding: 1em 2em;
+    min-width: 320px;
+    margin-top: 2em;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .tavling_container {
+    box-shadow: inset 0px 50svh 10svh #00000025;
+  }
+
+  .tavling_container-text h1 {
+    font-size: 2.2em;
+  }
+
+  .tavling_container-button button {
+    padding: 0.8em 1.6em;
+    min-width: 260px;
+    margin-top: 2em;
+    font-size: 0.8em;
+  }
+
+  .tavling_container-icon_down {
+    bottom: 2.5em;
+  }
+
+  @keyframes icon-down {
+    0% {
+      margin-bottom: 0;
+    }
+    100% {
+      margin-bottom: 1.6em;
+    }
+  }
+}

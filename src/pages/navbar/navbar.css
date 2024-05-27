@@ -4,7 +4,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  padding: 2em;
+  /* padding: 2em; */
 
   display: flex;
   flex-direction: row;
@@ -15,10 +15,12 @@
 }
 
 .navbar_container {
-  width: 80%;
-  background: #00000050;
+  height: 12svh;
+  width: 100%;
+  /* background: #00000050; */
+  background: linear-gradient(to bottom, #00000072, #00000000);
   padding: 1.2em;
-  border-radius: 1.2em;
+  /* border-radius: 1.2em; */
 
   display: flex;
   flex-direction: row;
