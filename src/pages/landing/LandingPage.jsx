@@ -6,11 +6,50 @@ import img4 from "../../assets/images/start1_notitle.jpg";
 import logo from "../../assets/images/logga-medium_nobg.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const LandingPage = () => {
   const [image, setImage] = useState(img1);
 
   const [animated, setAnimated] = useState(false);
+
+  const handleNextImage = () => {
+    setAnimated(true);
+    if (image === img1) {
+      setImage(img2);
+    }
+    if (image === img2) {
+      setImage(img3);
+    }
+    if (image === img3) {
+      setImage(img4);
+    }
+    if (image === img4) {
+      setImage(img1);
+    }
+    setTimeout(() => {
+      setAnimated(false);
+    }, 1000);
+  };
+
+  const handlePrevImage = () => {
+    setAnimated(true);
+    if (image === img1) {
+      setImage(img4);
+    }
+    if (image === img2) {
+      setImage(img1);
+    }
+    if (image === img3) {
+      setImage(img2);
+    }
+    if (image === img4) {
+      setImage(img3);
+    }
+    setTimeout(() => {
+      setAnimated(false);
+    }, 1000);
+  };
 
   const handleSetImage = (img) => {
     setAnimated(true);
@@ -20,6 +59,10 @@ const LandingPage = () => {
       setAnimated(false);
     }, 1000);
   };
+
+  // const nextImage = () => {
+  //   setImage(${img + ´´})
+  // }
 
   return (
     <div id="landing" className="landing_container">
@@ -112,6 +155,14 @@ const LandingPage = () => {
         </div>
         <div className="landing_container-slider_wrapper">
           <div className="landing_container-slider_wrapper-slider">
+            <div className="landing_container-slider_nav-arrows">
+              <span onClick={handlePrevImage}>
+                <ChevronLeft />
+              </span>
+              <span onClick={handleNextImage}>
+                <ChevronRight />
+              </span>
+            </div>
             <img src={image} alt="img" className={animated && "animation"} />
             {/*
           <img id="slide-1" src={img1} alt="img1" />
