@@ -1,7 +1,7 @@
 import "./landingPage.css";
 import img1 from "../../assets/images/landing-2.jpg";
 import img2 from "../../assets/images/tennisskolan.jpg";
-import img3 from "../../assets/images/stadium-logo.png";
+import img3 from "../../assets/images/logga1-medium.jpg";
 import img4 from "../../assets/images/start1_notitle.jpg";
 import logo from "../../assets/images/logga-medium_nobg.png";
 import { useState } from "react";
@@ -59,10 +59,6 @@ const LandingPage = () => {
       setAnimated(false);
     }, 1000);
   };
-
-  // const nextImage = () => {
-  //   setImage(${img + ´´})
-  // }
 
   return (
     <div id="landing" className="landing_container">
@@ -125,7 +121,12 @@ const LandingPage = () => {
                 då här!
               </p>
               <button>
-                <Link to={"tennisskolan"}>Visa mig tennisskolan</Link>
+                <Link
+                  className="landing_container-desc_container-desc-link"
+                  to={"tennisskolan"}
+                >
+                  Visa mig
+                </Link>
               </button>
             </>
           )}
@@ -133,7 +134,7 @@ const LandingPage = () => {
           {image === img3 && (
             <>
               <h3>Sponsorer</h3>
-              <p>Stadium</p>
+              <p>Vill ni synas här?</p>
               <button>Vill ni vara med?</button>
             </>
           )}

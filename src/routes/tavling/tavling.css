@@ -111,6 +111,7 @@
 
 .tavling_content {
   display: flex;
+  padding: 2rem;
 }
 
 .tavling_content-sidebar {
@@ -122,6 +123,7 @@
 
 .tavling_content-sidebar h3 {
   cursor: pointer;
+  color: #333;
 }
 
 .tavling_content h1 {

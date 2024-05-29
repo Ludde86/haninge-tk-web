@@ -111,6 +111,7 @@
 
 .tennisskolan_content {
   display: flex;
+  padding: 2rem;
 }
 
 .tennisskolan_content-sidebar {
@@ -122,6 +123,7 @@
 
 .tennisskolan_content-sidebar h3 {
   cursor: pointer;
+  color: #333;
 }
 
 .tennisskolan_content h1 {

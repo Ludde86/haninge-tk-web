@@ -4,7 +4,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  padding: 2em;
+  /* padding: 2em; */
 
   display: flex;
   flex-direction: row;
@@ -20,12 +20,12 @@
   background: #00000050;
   /* background: linear-gradient(to bottom, #00000072, #00000000); */
   padding: 1.2em;
-  border-radius: 1.2em;
+  /* border-radius: 1.2em; */
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: 1s;
+  transition: 0.5s ease-in-out;
 }
 
 .navbar_container-submenu {
@@ -41,7 +41,7 @@
 
 .menu-btn {
   position: absolute;
-  top: 4rem;
+  top: 2rem;
   z-index: 20;
   left: 50%;
   transform: translateX(-50%);

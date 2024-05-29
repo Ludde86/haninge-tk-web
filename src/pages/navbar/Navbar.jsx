@@ -22,11 +22,11 @@ const Navbar = () => {
             <Link className="navbar_container-link" to={"tavling"}>
               Tävling
             </Link>
-            <div />
-            <Link className="navbar_container-link" to={"tennisskolan"}>
+            <div className="navbar_container-link" />
+            <Link className="navbar_container-link" to={"/"}>
               Medlemsskap
             </Link>
-            <Link className="navbar_container-link" to={"tennisskolan"}>
+            <Link className="navbar_container-link" to={"/"}>
               Boka bana
             </Link>
           </div>
@@ -37,18 +37,18 @@ const Navbar = () => {
               opacity: navOpen ? 1 : 0,
             }}
           >
-            <Link className="navbar_container-link" to={"tennisskolan"}>
+            <Link className="navbar_container-link" to={"/"}>
               Vision & Värdegrund
             </Link>
-            <Link className="navbar_container-link" to={"tennisskolan"}>
+            <Link className="navbar_container-link" to={"/"}>
               Kontrakt/strötider
             </Link>
 
-            <div />
-            <Link className="navbar_container-link" to={"tavling"}>
+            <div className="navbar_container-link" />
+            <Link className="navbar_container-link" to={"/"}>
               Kontakt
             </Link>
-            <Link className="navbar_container-link" to={"tennisskolan"}>
+            <Link className="navbar_container-link" to={"/"}>
               Hitta hit
             </Link>
           </div>

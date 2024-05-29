@@ -24,7 +24,7 @@ const CardsPage = () => {
         <h2>Boka bana</h2>
       </div>
       <div className="cards_container-card">
-        <h3>spelarprofil </h3>
+        <h3>Spelarprofil </h3>
         <p>
           Att tävla i tennis är för många barn väldigt stimulerande, spännande
           och utmanande. En match utvecklar dessutom i regel en spelares tennis
