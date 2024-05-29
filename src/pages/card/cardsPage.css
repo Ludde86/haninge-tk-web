@@ -1,0 +1,62 @@
+.cards_container {
+  min-height: 75svh;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background: #e6eff5; */
+  /* padding: 0 6rem; */
+  padding-top: 0;
+
+  background-image: url("../../assets/images/tennis-2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.cards_container-card {
+  min-height: 400px;
+  max-height: 400px;
+  min-width: 400px;
+  max-width: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  /* background: #344da9; */
+  /* border: 2px solid #1560bd; */
+  /* border: 2px solid #333; */
+  background: #fff;
+
+  /* border-radius: 2rem; */
+  color: #1560bd;
+  opacity: 0.9;
+
+  transition: 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    background: #1561bd;
+    color: #fff;
+    opacity: 0.9;
+    border: 2px solid #1561bd;
+  }
+}
+
+.cards_container-card h3 {
+  padding: 0 2rem;
+  font-size: 2rem;
+}
+.cards_container-card p {
+  padding: 0 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(90deg);
+  }
+}
