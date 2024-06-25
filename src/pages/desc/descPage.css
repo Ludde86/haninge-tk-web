@@ -1,0 +1,33 @@
+.desc_container {
+  min-height: 100svh;
+
+  display: flex;
+}
+
+.desc_container-empty {
+  flex: 1;
+}
+.desc_container-desc {
+  flex: 1;
+  color: #333;
+  margin: 0 6rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 100svh;
+  padding: 6rem 0;
+}
+
+.desc_container-desc p {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.desc_container-desc button {
+  &:hover {
+    border: 1px solid #1974d2;
+  }
+}

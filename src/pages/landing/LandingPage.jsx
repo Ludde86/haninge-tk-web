@@ -3,7 +3,6 @@ import img1 from "../../assets/images/landing-2.jpg";
 import img2 from "../../assets/images/tennisskolan.jpg";
 import img3 from "../../assets/images/logga1-medium.jpg";
 import img4 from "../../assets/images/start1_notitle.jpg";
-import logo from "../../assets/images/logga-medium_nobg.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -62,15 +61,6 @@ const LandingPage = () => {
 
   return (
     <div id="landing" className="landing_container">
-      <div className="landing_container-logo_container">
-        <img src={logo} alt="logo" />
-        <p>
-          Haninge Tennisklubb är den personliga tennisklubben där alla ska känna
-          sig lika välkomna, här uppmuntras engagemang och delaktighet,
-          individen ges möjlighet till utveckling och efter sin egen
-          ambitionsnivå uppnå sin högsta potential!
-        </p>
-      </div>
       <div className="landing_container-desc_container">
         <div className="landing_container-desc_container-desc">
           {image === img1 && (
@@ -97,7 +87,14 @@ const LandingPage = () => {
                 av dig till oss. Varmt välkommen till oss på Haninge
                 Tennisklubb.
               </p>
-              <button>Vår vision</button>
+              <button>
+                <Link
+                  className="landing_container-desc_container-desc-link"
+                  to={"tennisskolan"}
+                >
+                  Vår vision
+                </Link>
+              </button>
             </>
           )}
 

@@ -1,31 +1,10 @@
 .landing_container {
   min-height: 100svh;
   scroll-snap-align: start;
-
-  background: #fff;
-}
-
-.landing_container-logo_container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 50svh;
-}
-
-.landing_container-logo_container img {
-  width: 25%;
-}
-
-.landing_container-logo_container p {
-  color: #333;
-  font-size: 1.4rem;
-  font-weight: 700;
-  padding-left: 6rem;
 }
 
 .landing_container-desc_container {
-  background: #e0e7f495;
+  background: #e0e7f4;
   /* max-width: 40%; */
   min-height: 100svh;
   max-height: 100svh;
@@ -43,8 +22,8 @@
   height: 80svh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  padding: 2rem;
+  justify-content: space-between;
+  padding: 6rem 2rem;
 }
 
 .landing_container-desc_container-desc h3 {
@@ -75,7 +54,7 @@
 }
 
 .landing_container-desc_container-desc button {
-  opacity: 0;
+  /* opacity: 0;
   transform: translateY(100%);
   animation: drop-down 1s forwards;
   animation-delay: 0.6s;
@@ -89,11 +68,12 @@
   justify-content: center;
   align-items: center;
   padding: 0;
-  margin: 0;
+  margin: 0; */
 }
 
 .landing_container-desc_container-desc-link {
   font-size: 1.2rem;
+  color: #fff;
 }
 
 @keyframes drop-down {

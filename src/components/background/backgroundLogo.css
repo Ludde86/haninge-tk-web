@@ -1,0 +1,34 @@
+.background_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+.background_logo-logo {
+  background-image: url("../../assets/images/logga-medium_nobg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  min-height: 100svh;
+
+  flex: 1;
+  margin: 0 6rem;
+}
+
+.background_logo-desc {
+  flex: 1;
+  color: #333;
+  margin: 0 6rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 50svh;
+}
