@@ -1,7 +1,11 @@
 import { ChevronsDown } from "lucide-react";
 import "./heroPage.css";
+import { useEffect } from "react";
 
 const HeroPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="hero_container">
       <div className="hero_container-text">

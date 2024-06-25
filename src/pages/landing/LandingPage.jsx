@@ -87,14 +87,12 @@ const LandingPage = () => {
                 av dig till oss. Varmt välkommen till oss på Haninge
                 Tennisklubb.
               </p>
-              <button>
-                <Link
-                  className="landing_container-desc_container-desc-link"
-                  to={"tennisskolan"}
-                >
-                  Vår vision
-                </Link>
-              </button>
+              <Link
+                className="landing_container-desc_container-desc-link"
+                to={"tennisskolan"}
+              >
+                <button>Vår vision</button>
+              </Link>
             </>
           )}
 
@@ -117,14 +115,12 @@ const LandingPage = () => {
                 För att anmäla dig till tennisskolan eller vuxentennis, klicka
                 då här!
               </p>
-              <button>
-                <Link
-                  className="landing_container-desc_container-desc-link"
-                  to={"tennisskolan"}
-                >
-                  Visa mig
-                </Link>
-              </button>
+              <Link
+                className="landing_container-desc_container-desc-link"
+                to={"tennisskolan"}
+              >
+                <button>Visa mig</button>
+              </Link>
             </>
           )}
 
@@ -147,7 +143,12 @@ const LandingPage = () => {
                 till man fyllt 18 år. Det finns ett stort utbud tävlingar för
                 alla åldrar och kategorier.
               </p>
-              <button>Läs mer om våra tävlingar</button>
+              <Link
+                className="landing_container-desc_container-desc-link"
+                to={"tavling"}
+              >
+                <button>Läs mer om våra tävlingar</button>
+              </Link>
             </>
           )}
         </div>
