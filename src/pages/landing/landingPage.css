@@ -19,8 +19,9 @@
   align-items: center;
 
   position: relative;
-  background: #0000000e;
+  background: #00000005;
   border-radius: 1rem;
+  box-shadow: 0 0 0.6rem #00000088;
 }
 
 .landing_container-desc_container-desc {
@@ -110,8 +111,9 @@
 .landing_container-slider_wrapper-slider img {
   flex: 1 0 100%;
   object-fit: cover;
-  border-radius: 1rem;
   overflow: hidden;
+  box-shadow: 0 0 0.6rem #00000088;
+  border-radius: 0.2rem;
 }
 
 .animation {
@@ -178,9 +180,16 @@
   height: 80px;
   cursor: pointer;
   border-radius: 100%;
+
+  background: #344da980;
+  transition: 0.3s;
+
+  &:hover {
+    background: #344da9b9;
+  }
 }
 
-#prevBtn {
+/* #prevBtn {
   background: linear-gradient(to left, #344da900, #344da980);
 
   &:hover {
@@ -194,7 +203,7 @@
   &:hover {
     background: linear-gradient(to right, #344da900, #344da9b9);
   }
-}
+} */
 
 @media screen and (max-width: 600px) {
   .landing_container-slider_wrapper {

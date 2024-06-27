@@ -1,7 +1,7 @@
 .background_logo {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 
   position: fixed;
   top: 0;
@@ -15,20 +15,8 @@
   background-size: contain;
   background-position: center;
   min-height: 100svh;
+  max-width: 30%;
 
   flex: 1;
   margin: 0 6rem;
-}
-
-.background_logo-desc {
-  flex: 1.5;
-  color: #333;
-  margin: 0 6rem;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-
-  height: 50svh;
 }
