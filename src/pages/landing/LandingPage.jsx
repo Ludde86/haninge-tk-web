@@ -63,10 +63,10 @@ const LandingPage = () => {
     <div id="landing" className="landing_container">
       <div className="landing_container-desc_container">
         <div className="landing_container-slider_nav-arrows">
-          <span onClick={handlePrevImage}>
+          <span id="prevBtn" onClick={handlePrevImage}>
             <ChevronLeft />
           </span>
-          <span onClick={handleNextImage}>
+          <span id="nextBtn" onClick={handleNextImage}>
             <ChevronRight />
           </span>
         </div>
