@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./cardsPage.css";
 
 const CardsPage = () => {
@@ -13,7 +14,13 @@ const CardsPage = () => {
         </p>
         <h2>Bli medlem</h2>
       </div>
-      <div className="cards_container-card">
+
+      <a
+        className="cards_container-card"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.matchi.se/facilities/haningetk"
+      >
         <h3>Utveckling</h3>
         <p>
           Alla ska känna att dom utvecklas i vår tennisklubb! Oavsett
@@ -22,8 +29,9 @@ const CardsPage = () => {
           dess anläggning. Vi ska alltid ligga i framkant.
         </p>
         <h2>Boka bana</h2>
-      </div>
-      <div className="cards_container-card">
+      </a>
+
+      <Link className="cards_container-card" to={"tavling"}>
         <h3>Spelarprofil </h3>
         <p>
           Att tävla i tennis är för många barn väldigt stimulerande, spännande
@@ -33,7 +41,7 @@ const CardsPage = () => {
           finns ett stort utbud tävlingar för alla åldrar och kategorier.
         </p>
         <h2>Börja tävla</h2>
-      </div>
+      </Link>
     </div>
   );
 };

@@ -15,7 +15,15 @@ const HeroPage = () => {
       </div>
 
       <div className="hero_container-button">
-        <button className="hero_container-button-act_button">Boka bana</button>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.matchi.se/facilities/haningetk"
+        >
+          <button className="hero_container-button-act_button">
+            Boka bana
+          </button>
+        </a>
         <button className="hero_container-button-sub_button">Bli medlem</button>
       </div>
       <a className="hero_container-icon_down" href="#landing">

@@ -42,11 +42,6 @@
   width: 6vw;
 
   transition: all 0.3s ease-in-out;
-
-  &:hover {
-    /* transform: scale(1.1); */
-    color: #1974d2;
-  }
 }
 
 .open {

@@ -2,12 +2,13 @@
   min-height: 100svh;
   scroll-snap-align: start;
   padding: 6rem;
-  /* background: #fff; */
+  background: #00000027;
 }
 
 .landing_container-desc_container {
   background: #e0e7f4a9;
   background: #e0e7f4;
+  background: #fff;
   /* background: #a6e7ff; */
   /* max-width: 40%; */
   min-height: 80svh;
@@ -81,6 +82,10 @@
   padding: 1rem;
   z-index: 2;
 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
   /* border-radius: 1rem; */
 }
 
@@ -130,7 +135,7 @@
 .landing_container-slider_wrapper-slider img {
   flex: 1 0 100%;
   object-fit: cover;
-  /* border-radius: 2rem; */
+  /* border-radius: 1rem; */
   overflow: hidden;
 }
 
@@ -201,7 +206,7 @@
 
   &:hover {
     cursor: pointer;
-    background: #0000002d;
+    background: #00000018;
   }
 }
 

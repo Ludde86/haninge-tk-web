@@ -119,6 +119,10 @@
   padding: 2rem 4rem;
 }
 
+.tennisskolan_content-desc p {
+  margin-top: 1rem;
+}
+
 .tennisskolan_content h1 {
   color: #333;
   text-align: start;

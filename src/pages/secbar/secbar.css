@@ -1,0 +1,41 @@
+.secbar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(75deg, #ffffff 50%, #344da9f3 50%);
+
+  opacity: 0;
+  transform: translate(100%, -100%);
+  transition: 0.6s ease-in-out;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.secbar-openSec {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.secbar-img_container {
+}
+.secbar-img_container img {
+  width: 50%;
+  object-fit: cover;
+}
+.secbar-link_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 80%;
+  width: 50%;
+}
+
+.secbar-link_container p {
+  color: #fff;
+  font-size: 1.6rem;
+}

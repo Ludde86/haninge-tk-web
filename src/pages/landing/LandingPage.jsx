@@ -5,7 +5,7 @@ import img3 from "../../assets/images/logga1-medium.jpg";
 import img4 from "../../assets/images/start1_notitle.jpg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, MoveRight } from "lucide-react";
 
 const LandingPage = () => {
   const [image, setImage] = useState(img1);
@@ -99,7 +99,9 @@ const LandingPage = () => {
                 className="landing_container-desc_container-desc-link"
                 to={"tennisskolan"}
               >
-                <button>Vår vision</button>
+                <button>
+                  Vår vision <MoveRight />
+                </button>
               </Link>
             </>
           )}
@@ -127,7 +129,10 @@ const LandingPage = () => {
                 className="landing_container-desc_container-desc-link"
                 to={"tennisskolan"}
               >
-                <button>Visa mig</button>
+                <button>
+                  Läs mer om tennisskolan
+                  <MoveRight />
+                </button>
               </Link>
             </>
           )}
@@ -136,7 +141,9 @@ const LandingPage = () => {
             <>
               <h3>Sponsorer</h3>
               <p>Vill ni synas här?</p>
-              <button>Vill ni vara med?</button>
+              <button>
+                Vill ni vara med? <MoveRight />
+              </button>
             </>
           )}
 
@@ -155,7 +162,9 @@ const LandingPage = () => {
                 className="landing_container-desc_container-desc-link"
                 to={"tavling"}
               >
-                <button>Läs mer om våra tävlingar</button>
+                <button>
+                  Läs mer om våra tävlingar <MoveRight />
+                </button>
               </Link>
             </>
           )}

@@ -72,6 +72,19 @@ const Tavling = () => {
             enbart bara enskilda träningstimmar.
           </p>
         </div>
+
+        <div className="tavling_content-desc">
+          <h1>Gruppspel</h1>
+          <p>
+            Alla kan vara med, från nybörjare till elitnivå! Du sätts in i den
+            grupp du passar, beroende på din egen spelnivå. Matcherna brukar bli
+            i snitt 1 gång/vecka med spel på kvällstid i veckorna alt. dagtid på
+            helgen. Priset ligger mellan 600-800 kr per omgång. I priserna ingår
+            cirka 6-8 matcher och 1 bollrör. För mer info, vänligen kontakta
+            Slobodan eller gå in gruppspels hemsidan och gör en intresseanmälan:
+            BackhandSmash - HTK Välkomna! Gruppspelsansvarig
+          </p>
+        </div>
       </div>
     </>
   );
