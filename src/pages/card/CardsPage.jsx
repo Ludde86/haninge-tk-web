@@ -4,7 +4,7 @@ import "./cardsPage.css";
 const CardsPage = () => {
   return (
     <div className="cards_container">
-      <div className="cards_container-card">
+      <div id="card-2" className="cards_container-card">
         <h3>Vision</h3>
         <p>
           Haninge Tennisklubb ska vara den personliga tennisklubben där alla ska
@@ -12,15 +12,35 @@ const CardsPage = () => {
           individen ges möjlighet till utveckling och efter sin egen
           ambitionsnivå uppnå sin högsta potential.
         </p>
-        <h2>Bli medlem</h2>
+        <div className="cards_container-card-vision">
+          <h2>Glädje</h2>
+          <h2>Gemenskap</h2>
+          <h2>Utveckling</h2>
+        </div>
       </div>
 
-      <a
-        className="cards_container-card"
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.matchi.se/facilities/haningetk"
-      >
+      <div id="card-3" className="cards_container-card">
+        <h3>Glädje</h3>
+        <p>
+          Tennis är världens roligaste sport! Ur glädjen till sporten föds det
+          motivation och ett gott självbefinnande. Glädje smittar och skapar en
+          positiv kultur i klubben. Genom engagemang och glädje ska personalen
+          ge av sitt kunnande så att alla känner sig välkomna i klubben.
+        </p>
+      </div>
+
+      <div id="card-3" className="cards_container-card">
+        <h3>Gemenskap</h3>
+        <p>
+          Klubben ska vara inkluderande! Alla som vill och kan ska kunna vara
+          med utifrån sina förutsättningar. Vi bygger vår klubb på tillsammans
+          och ingen ska känna sig ensam i klubben. Gemenskapen skapar öppenhet
+          och transparens och därigenom delaktiga medlemmar. Nolltolerans mot
+          all slags mobbing. Vi värnar om klubbkänslan.
+        </p>
+      </div>
+
+      <div id="card-3" className="cards_container-card">
         <h3>Utveckling</h3>
         <p>
           Alla ska känna att dom utvecklas i vår tennisklubb! Oavsett
@@ -28,19 +48,21 @@ const CardsPage = () => {
           hela tiden sträva efter att utveckla organisationen, verksamheten och
           dess anläggning. Vi ska alltid ligga i framkant.
         </p>
-        <h2>Boka bana</h2>
-      </a>
+      </div>
 
-      <Link className="cards_container-card" to={"tavling"}>
-        <h3>Spelarprofil </h3>
+      <Link id="card-1" className="cards_container-card" to={"tavling"}>
+        <h3>Mål</h3>
         <p>
-          Att tävla i tennis är för många barn väldigt stimulerande, spännande
-          och utmanande. En match utvecklar dessutom i regel en spelares tennis
-          betydligt mer än en enskild träningstimme. Idag kan barn börja tävla
-          redan vid 6 års ålder. Junior är man fram till man fyllt 18 år. Det
-          finns ett stort utbud tävlingar för alla åldrar och kategorier.
+          HTK ska bedriva breddtennis med Haninge kommun som huvudsakligt
+          upptagningsområde. Verksamheten ska i huvudsak omfatta:
         </p>
-        <h2>Börja tävla</h2>
+        <div className="cards_container-card-vision">
+          <h2>Träning</h2>
+          <h2>Kontrakt- och strötidsspel</h2>
+          <h2>Gruppspel</h2>
+          <h2>Tävlingar</h2>
+          <h2>Trivselaktiviteter, evenemang</h2>
+        </div>
       </Link>
     </div>
   );

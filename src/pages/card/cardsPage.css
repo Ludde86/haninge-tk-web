@@ -6,19 +6,20 @@
   align-items: center;
   /* background: #e6eff5; */
   /* padding: 0 6rem; */
-  padding-top: 0;
+  padding: 4rem;
 
-  background-image: url("../../assets/images/ben-hershey-K9HgyI3qmqA-unsplash.jpg");
+  /* background-image: url("../../assets/images/ben-hershey-K9HgyI3qmqA-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
+  background: #fff;
+  flex-wrap: wrap;
+  gap: 4rem;
 }
 
 .cards_container-card {
   min-height: 400px;
   max-height: 400px;
-  min-width: 400px;
-  max-width: 400px;
 
   display: flex;
   flex-direction: column;
@@ -26,23 +27,36 @@
   align-items: center;
 
   /* background: #344da9; */
-  /* border: 2px solid #1560bd; */
+  border: 2px solid #1560bd;
   /* border: 2px solid #333; */
   background: #fff;
 
-  /* border-radius: 2rem; */
+  border-radius: 2rem;
   color: #1560bd;
   opacity: 0.9;
 
   transition: 0.3s;
+  cursor: default;
 
   &:hover {
-    cursor: pointer;
     background: #1561bd;
     color: #fff;
     opacity: 0.9;
     border: 2px solid #1561bd;
   }
+}
+
+#card-1 {
+  flex: 3;
+  min-width: 1200px;
+}
+#card-2 {
+  flex: 2;
+  min-width: 800px;
+}
+#card-3 {
+  flex: 1;
+  min-width: 400px;
 }
 
 .cards_container-card h3 {
@@ -51,12 +65,25 @@
 }
 .cards_container-card p {
   padding: 0 2rem;
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  /* font-weight: 700; */
 }
 
 @keyframes spin {
   to {
     transform: rotate(90deg);
   }
+}
+
+.cards_container-card-vision {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cards_container-card-vision h2 {
+  flex: 1;
+  font-size: 1.2rem;
+  font-weight: 700;
 }

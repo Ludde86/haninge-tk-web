@@ -21,7 +21,7 @@ root.render(
     <Link to={"/"}>
       <Home
         size={40}
-        style={{ position: "fixed", bottom: "2rem", left: "2rem" }}
+        style={{ position: "fixed", bottom: "2rem", right: "2rem" }}
       />
     </Link>
     <Routes>
