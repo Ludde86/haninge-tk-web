@@ -4,6 +4,13 @@
 
   display: flex;
   background: linear-gradient(75deg, #344da9 50%, transparent 50%);
+  background: repeating-linear-gradient(
+    75deg,
+    #344da9,
+    #344da9 1042px,
+    transparent 0,
+    transparent 1580px
+  );
   /* border-top: 1rem solid #344da9; */
   /* border-bottom: 1rem solid #344da9; */
 }

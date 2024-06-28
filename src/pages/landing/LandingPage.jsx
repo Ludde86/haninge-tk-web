@@ -62,14 +62,6 @@ const LandingPage = () => {
   return (
     <div id="landing" className="landing_container">
       <div className="landing_container-desc_container">
-        <div className="landing_container-slider_nav-arrows">
-          <span id="prevBtn" onClick={handlePrevImage}>
-            <ChevronLeft />
-          </span>
-          <span id="nextBtn" onClick={handleNextImage}>
-            <ChevronRight />
-          </span>
-        </div>
         <div className="landing_container-desc_container-desc">
           {image === img1 && (
             <>
@@ -172,6 +164,14 @@ const LandingPage = () => {
 
         <div className="landing_container-slider_wrapper">
           <div className="landing_container-slider_wrapper-slider">
+            <div className="landing_container-slider_nav-arrows">
+              <span id="prevBtn" onClick={handlePrevImage}>
+                <ChevronLeft />
+              </span>
+              <span id="nextBtn" onClick={handleNextImage}>
+                <ChevronRight />
+              </span>
+            </div>
             <img src={image} alt="img" className={animated && "animation"} />
             {/*
           <img id="slide-1" src={img1} alt="img1" />

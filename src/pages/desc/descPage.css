@@ -4,6 +4,13 @@
 
   display: flex;
   background: linear-gradient(75deg, transparent 50%, #344da9 50%);
+  background: repeating-linear-gradient(
+    75deg,
+    #344da9,
+    #344da9 503px,
+    transparent 0,
+    transparent 1042px
+  );
   /* border-top: 1rem solid #344da9; */
   /* border-bottom: 1rem solid #344da9; */
 }
@@ -14,7 +21,7 @@
 .desc_container-desc {
   flex: 1;
   color: #333;
-  margin: 0 6rem;
+  /* margin: 0 6rem; */
 
   display: flex;
   flex-direction: column;
@@ -22,7 +29,8 @@
   align-items: flex-end;
 
   height: 100svh;
-  padding: 6rem 0;
+  padding: 6rem;
+  background: linear-gradient(75deg, transparent 50%, #344da9 50%);
 }
 
 .desc_container-desc p {
