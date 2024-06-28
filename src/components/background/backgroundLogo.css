@@ -20,3 +20,21 @@
   flex: 1;
   margin: 0 6rem;
 }
+
+@media screen and (max-width: 560px) {
+  .background_logo {
+    flex-direction: column;
+    max-width: 100vw;
+  }
+
+  .background_logo-logo {
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100svh;
+    max-width: 100%;
+
+    flex: 1;
+    margin: 0;
+  }
+}

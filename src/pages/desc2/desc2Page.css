@@ -1,5 +1,6 @@
 .desc2_container {
   min-height: 100svh;
+
   box-sizing: border-box;
 
   display: flex;
@@ -43,5 +44,59 @@
 .desc2_container-desc button {
   &:hover {
     border: 1px solid #1974d2;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .desc2_container {
+    min-height: 75svh;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(75deg, #344da9 50%, transparent 50%);
+    background: repeating-linear-gradient(
+      75deg,
+      #344da9,
+      #344da9 1042px,
+      transparent 0,
+      transparent 1580px
+    );
+    /* border-top: 1rem solid #344da9; */
+    /* border-bottom: 1rem solid #344da9; */
+  }
+
+  .desc2_container-empty {
+    flex: 0;
+  }
+  .desc2_container-desc {
+    flex: 1;
+    color: #333;
+    margin: 0;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    min-height: 75svh;
+  }
+
+  .desc2_container-desc p {
+    font-size: 1rem;
+    padding-right: 0rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+  }
+
+  .desc2_container-desc button {
+    &:hover {
+      border: 1px solid #1974d2;
+    }
   }
 }

@@ -1,5 +1,6 @@
 .desc_container {
   min-height: 100svh;
+  max-height: 100svh;
   box-sizing: border-box;
 
   display: flex;
@@ -28,7 +29,8 @@
   justify-content: space-around;
   align-items: flex-end;
 
-  height: 100svh;
+  /* min-height: 100svh;
+  max-height: 100svh; */
   padding: 6rem;
   background: linear-gradient(75deg, transparent 50%, #344da9 50%);
 }
@@ -44,5 +46,42 @@
 .desc_container-desc button {
   &:hover {
     border: 1px solid #1974d2;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .desc_container {
+    flex-direction: column;
+    background: transparent;
+
+    min-height: 75svh;
+  }
+  .desc_container-empty {
+    flex: 0;
+  }
+  .desc_container-desc {
+    flex: 0;
+    padding: 0;
+    min-height: 75svh;
+    background: var(--color-htk-2);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .desc_container-desc p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 0 2rem;
+    text-align: center;
+  }
+
+  .desc_container-desc button {
+    &:hover {
+      border: 1px solid #1974d2;
+    }
   }
 }

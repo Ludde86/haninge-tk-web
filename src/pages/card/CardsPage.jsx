@@ -3,7 +3,7 @@ import "./cardsPage.css";
 const CardsPage = () => {
   return (
     <div className="cards_container">
-      <h1>Våra visioner och värdegrund</h1>
+      <h1>Vår värdegrund och visioner</h1>
       <div className="cards_container-cards">
         <div id="card-2" className="cards_container-card">
           <h3>Vision</h3>
