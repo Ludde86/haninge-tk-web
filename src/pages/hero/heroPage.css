@@ -190,7 +190,7 @@
 
   .hero_container-icon_down {
     bottom: 0;
-    color: var(--color-htk-2);
+    color: var(--color-htk);
   }
 
   @keyframes icon-down {
