@@ -111,27 +111,24 @@
 
 .tavling_content {
   display: flex;
-  padding: 2rem;
-}
-
-.tavling_content-sidebar {
-  display: flex;
   flex-direction: column;
-  align-items: flex-start;
   padding: 2rem;
 }
 
-.tavling_content-sidebar h3 {
-  cursor: pointer;
-  color: #333;
+.tavling_content-desc {
+  padding: 2rem 4rem;
 }
 
 .tavling_content h1 {
   color: #333;
+  text-align: start;
+  font-size: 1.8rem;
 }
 
 .tavling_content p {
   color: #333;
+  text-align: start;
+  font-size: 1.4rem;
 }
 
 @media screen and (max-width: 1020px) {

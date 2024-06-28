@@ -1,0 +1,40 @@
+.background_logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+.background_logo-logo {
+  background-image: url("../../assets/images/logga-medium_nobg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  min-height: 100svh;
+  max-width: 20%;
+
+  flex: 1;
+  margin: 0 6rem;
+}
+
+@media screen and (max-width: 560px) {
+  .background_logo {
+    flex-direction: column;
+    max-width: 100vw;
+  }
+
+  .background_logo-logo {
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100svh;
+    max-width: 100%;
+
+    flex: 1;
+    margin: 0;
+  }
+}

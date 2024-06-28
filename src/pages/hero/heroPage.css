@@ -1,6 +1,7 @@
 .hero_container {
   min-height: 100svh;
-  padding-right: 6em;
+  padding-right: 6rem;
+  padding-top: 12svh;
 
   background-image: url("../../assets/images/img-2.jpg");
   background-repeat: no-repeat;
@@ -188,7 +189,8 @@
   }
 
   .hero_container-icon_down {
-    bottom: 2.5em;
+    bottom: 0;
+    color: var(--color-htk);
   }
 
   @keyframes icon-down {

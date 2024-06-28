@@ -111,27 +111,28 @@
 
 .tennisskolan_content {
   display: flex;
-  padding: 2rem;
-}
-
-.tennisskolan_content-sidebar {
-  display: flex;
   flex-direction: column;
-  align-items: flex-start;
   padding: 2rem;
 }
 
-.tennisskolan_content-sidebar h3 {
-  cursor: pointer;
-  color: #333;
+.tennisskolan_content-desc {
+  padding: 2rem 4rem;
+}
+
+.tennisskolan_content-desc p {
+  margin-top: 1rem;
 }
 
 .tennisskolan_content h1 {
   color: #333;
+  text-align: start;
+  font-size: 1.8rem;
 }
 
 .tennisskolan_content p {
   color: #333;
+  text-align: start;
+  font-size: 1.4rem;
 }
 
 @media screen and (max-width: 1020px) {

@@ -3,10 +3,9 @@ import img1 from "../../assets/images/landing-2.jpg";
 import img2 from "../../assets/images/tennisskolan.jpg";
 import img3 from "../../assets/images/logga1-medium.jpg";
 import img4 from "../../assets/images/start1_notitle.jpg";
-import logo from "../../assets/images/logga-medium_nobg.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, MoveRight } from "lucide-react";
 
 const LandingPage = () => {
   const [image, setImage] = useState(img1);
@@ -62,15 +61,6 @@ const LandingPage = () => {
 
   return (
     <div id="landing" className="landing_container">
-      <div className="landing_container-logo_container">
-        <img src={logo} alt="logo" />
-        <p>
-          Haninge Tennisklubb är den personliga tennisklubben där alla ska känna
-          sig lika välkomna, här uppmuntras engagemang och delaktighet,
-          individen ges möjlighet till utveckling och efter sin egen
-          ambitionsnivå uppnå sin högsta potential!
-        </p>
-      </div>
       <div className="landing_container-desc_container">
         <div className="landing_container-desc_container-desc">
           {image === img1 && (
@@ -97,7 +87,14 @@ const LandingPage = () => {
                 av dig till oss. Varmt välkommen till oss på Haninge
                 Tennisklubb.
               </p>
-              <button>Vår vision</button>
+              <Link
+                className="landing_container-desc_container-desc-link"
+                to={"tennisskolan"}
+              >
+                <button>
+                  Vår vision <MoveRight />
+                </button>
+              </Link>
             </>
           )}
 
@@ -120,14 +117,15 @@ const LandingPage = () => {
                 För att anmäla dig till tennisskolan eller vuxentennis, klicka
                 då här!
               </p>
-              <button>
-                <Link
-                  className="landing_container-desc_container-desc-link"
-                  to={"tennisskolan"}
-                >
-                  Visa mig
-                </Link>
-              </button>
+              <Link
+                className="landing_container-desc_container-desc-link"
+                to={"tennisskolan"}
+              >
+                <button>
+                  Läs mer om tennisskolan
+                  <MoveRight />
+                </button>
+              </Link>
             </>
           )}
 
@@ -135,7 +133,9 @@ const LandingPage = () => {
             <>
               <h3>Sponsorer</h3>
               <p>Vill ni synas här?</p>
-              <button>Vill ni vara med?</button>
+              <button>
+                Vill ni vara med? <MoveRight />
+              </button>
             </>
           )}
 
@@ -150,17 +150,25 @@ const LandingPage = () => {
                 till man fyllt 18 år. Det finns ett stort utbud tävlingar för
                 alla åldrar och kategorier.
               </p>
-              <button>Läs mer om våra tävlingar</button>
+              <Link
+                className="landing_container-desc_container-desc-link"
+                to={"tavling"}
+              >
+                <button>
+                  Läs mer om våra tävlingar <MoveRight />
+                </button>
+              </Link>
             </>
           )}
         </div>
+
         <div className="landing_container-slider_wrapper">
           <div className="landing_container-slider_wrapper-slider">
             <div className="landing_container-slider_nav-arrows">
-              <span onClick={handlePrevImage}>
+              <span id="prevBtn" onClick={handlePrevImage}>
                 <ChevronLeft />
               </span>
-              <span onClick={handleNextImage}>
+              <span id="nextBtn" onClick={handleNextImage}>
                 <ChevronRight />
               </span>
             </div>
